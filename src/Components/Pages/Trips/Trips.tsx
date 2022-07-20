@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { Button } from "../Core";
-import Footer from "../Footer/Footer";
-import trip from "../../Assets/Images/trip.png";
-import Header from "../header/Hearder";
+import { Button } from "../../Core";
+import Footer from "../../Footer/Footer";
+import trip from "../../../Assets/Images/trip.png";
+import Header from "../../header/Hearder";
 import { MdFlight, MdOutlineNordicWalking } from "react-icons/md";
 import { RiHotelFill } from "react-icons/ri";
 import { AiFillCar } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { getPackagesAction } from "../Redux/Action/tripAction";
+import { getPackagesAction } from "../../Redux/Action/tripAction";
 
 function Trips() {
   let navigate = useNavigate();
@@ -297,7 +297,7 @@ function Trips() {
                       <span>{items.name}</span>
                       <Button
                         title="Book now"
-                        onClick={() => navigate(`/payment/${items.id}`)}
+                        onClick={() => navigate(`/view/${items.id}`)}
                       />
                     </div>
                   </div>
@@ -357,7 +357,7 @@ function Trips() {
                       <span className="text-dark h4 mb-0">₹ {items.price}</span>
                       <Button
                         title="Book now"
-                        onClick={() => navigate(`/payment/${items.id}`)}
+                        onClick={() => navigate(`/view/${items.id}`)}
                       />
                     </div>
                   </div>

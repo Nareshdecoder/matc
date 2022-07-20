@@ -1,11 +1,11 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import { Button } from "../Core";
-import Header from "../header/Hearder";
-import wallmac from "../../Assets/Images/wallmac.jpg";
-import nature from "../../Assets/Images/nature.jpg";
-import wallpic from "../../Assets/Images/wallpic.jpg";
-import Footer from "../Footer/Footer";
+import { Button } from "../../Core";
+import Header from "../../header/Hearder";
+import wallmac from "../../../Assets/Images/wallmac.jpg";
+import nature from "../../../Assets/Images/nature.jpg";
+import wallpic from "../../../Assets/Images/wallpic.jpg";
+import Footer from "../../Footer/Footer";
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 

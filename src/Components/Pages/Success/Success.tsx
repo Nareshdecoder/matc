@@ -1,7 +1,7 @@
 import React from "react";
 import { Navigate, useNavigate } from "react-router-dom";
 import thanks from "../../Assets/Images/thanks.webp";
-import { Button } from "../Core";
+import { Button } from "../../Core";
 function Success() {
   let navigate = useNavigate();
   const handleHome = () => {

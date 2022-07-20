@@ -5,14 +5,18 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import { store } from "./Store";
+import { Context, contextValue } from "./context";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
+    <Context.Provider value={contextValue}>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </Context.Provider>
   </React.StrictMode>
 );
 

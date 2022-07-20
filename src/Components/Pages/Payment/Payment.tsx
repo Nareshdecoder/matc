@@ -154,6 +154,7 @@ function Payment() {
                 id="firstName"
                 name="firstName"
                 type="text"
+                placeholder="Enter FirstName"
                 onChange={formik.handleChange}
                 value={formik.values.firstName}
                 onBlur={formik.handleBlur}
@@ -171,6 +172,7 @@ function Payment() {
                 id="lastName"
                 name="lastName"
                 type="text"
+                placeholder="Enter LastName"
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 value={formik.values.lastName}
@@ -189,6 +191,7 @@ function Payment() {
                 id="email"
                 name="email"
                 type="email"
+                placeholder="Enter Email"
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 value={formik.values.email}
@@ -204,6 +207,7 @@ function Payment() {
                 id="adhar"
                 name="adhar"
                 type="text"
+                placeholder="Exnter Number as Aadhar Format"
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 value={formik.values.adhar}
